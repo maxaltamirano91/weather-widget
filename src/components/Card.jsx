@@ -100,9 +100,9 @@ export const Widget = ({ props, handleClick }) => {
                   Max * {convertKelvinToCelsius(data?.main.temp_max).toFixed(2)}
                 </Text>
                 <Text>Hum *{data?.main.humidity}</Text>
-                <Text>Wind *{data?.wind.speed}</Text>
-                <Text>Sunrise {converTime(data?.sys.sunrise)}</Text>
-                <Text>Sunset {converTime(data?.sys.sunset)}</Text>
+                <Text>Wind: {data?.wind.speed}</Text>
+                <Text>Sunrise: {converTime(data?.sys.sunrise)}</Text>
+                <Text>Sunset: {converTime(data?.sys.sunset)}</Text>
               </Stack>
             ) : (
               <Stack>
